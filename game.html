@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors Game</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+    </style>
+<body>
+    <div class="backgroundimage">
+        <div class="scoreboard">
+            <span id="playerScore">0</span>
+            <span>:</span>
+            <span id="botScore">0</span>
+        </div>
+        <div class="container-players">
+           <div id="you">you</div><div id="bot">bot</div>
+        </div>
+        <div class="buttons">
+            <div class="buttons-you">
+                <button id="rock-you" onclick="game('rock')"><img src="SCISSORSUNCUT-removebg-preview.png" alt="rock"></button>
+                <button id="paper-you" onclick="game('paper')"><img src="PAPERUNCUT-removebg-preview.png" alt="paper"></button>
+                <button id="scissors-you" onclick="game('scissors')"><img src="ROCKUNCUT-removebg-preview.png" alt="Scissors"></button>
+            </div>
+            <div class="buttons-bot">  
+                <img id="rock-bot" src="SCISSORSUNCUT-removebg-preview.png" alt="rock">
+                <img id="paper-bot" src="PAPERUNCUT-removebg-preview.png" alt="paper">
+                <img id="scissors-bot" src="ROCKUNCUT-removebg-preview.png" alt="scissors">
+            </div>
+        </div>
+            <div class="back-button"> 
+                <a href="index.html">back</a>
+                <div id="message-lose">You lose!</div><div id="message-win">You win!</div><div id="message-draw">draw..</div>
+                <div onclick="resetGame()" id="play-again">play again?</div>
+            </div>
+        </div>
+        <audio autoplay loop>
+            <source src="Retro_Cassette__Day__Jul_8_2024_424_PM.m4a" type="audio/ogg">
+            <source src="Retro_Cassette__Day__Jul_8_2024_424_PM.m4a" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
